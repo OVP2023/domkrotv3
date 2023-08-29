@@ -8,9 +8,9 @@ function deactivateHole(index){
   return getHole( index ).className = 'hole';
 }
 
-activateHole = index =>
-  getHole( index ).className = 'hole hole_has-mole';
-
+function activateHole (index){
+  return getHole( index ).className = 'hole hole_has-mole';
+}
 function next(){
   setTimeout(() => {
     deactivateHole( activeHole );

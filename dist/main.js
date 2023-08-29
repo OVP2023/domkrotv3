@@ -1658,9 +1658,9 @@ function getHole(index) {
 function deactivateHole(index) {
   return getHole(index).className = 'hole';
 }
-activateHole = function activateHole(index) {
+function activateHole(index) {
   return getHole(index).className = 'hole hole_has-mole';
-};
+}
 function next() {
   setTimeout(function () {
     deactivateHole(activeHole);
