@@ -1,5 +1,3 @@
-describe("Пример теста", () => {
-  const str = 1
-  const expected = 1
-  expect(str).toBe(expected)
+test('My first test', () => {
+    expect(Math.max(1, 5, 10)).toBe(10);
 });
